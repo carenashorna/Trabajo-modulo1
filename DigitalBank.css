@@ -1,0 +1,207 @@
+#CajaPadre{
+    display: grid;
+    grid-template-columns: repeat(16, auto);
+    text-align: center;
+    gap: 10px;
+}
+.CajaHijo a {
+color: black;
+text-decoration: none;
+}
+
+
+.BotonCabecera
+a{
+display: flex;
+  border-radius: 8px;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background: linear-gradient(180deg, #00C853, #4FC3F7);
+
+}
+.BotonCabecera
+button{
+   border: none;
+   background-color: white; 
+
+}
+
+#SegundaCajaPadre{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#CajaWhy{
+    background-color: #f0f8ff6f;
+
+}
+
+#CajaPadre3{
+    background-color: #f0f8ff6f;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.CajaHijo3{
+    min-height: 300;
+   grid-column: 1/7;
+}
+
+#CajaArticles{
+min-height: 100;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+}
+.ImageArticles{
+    width: 100%
+}
+
+#CajaFooter{
+    display: grid;
+    grid-template-columns: repeat(16, auto);
+    text-align: center;
+    gap: 20px;
+    background-color: rgb(8, 8, 67);
+    color:White ;
+}
+
+.aFooter a {
+color: white;
+text-decoration: none;
+}
+
+.CajaHijo1Footer{
+grid-column: 1/17;
+}
+
+.BotonFooter
+a{
+display: flex;
+  border-radius: 8px;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background: linear-gradient(180deg, #00C853, #4FC3F7);
+
+}
+.BotonFooter
+button{
+   border: none;
+   background-color: rgb(8, 8, 67);
+
+}
+
+.Caja2-2
+a{
+display: flex;
+  border-radius: 8px;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background: linear-gradient(180deg, #00C853, #4FC3F7);
+
+}
+.Caja2-2
+button{
+   border: none;
+   background-color: white
+
+}
+
+/*--- TABLET---- */
+@media (max-width: 768px) {
+
+    #CajaPadre {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    #SegundaCajaPadre {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #SegundaCajaPadre img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    #CajaPadre3 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    #CajaArticles {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #CajaFooter {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+img {
+max-width: 100%;
+height: auto;
+}
+
+/* ---MOBILE--- */
+@media (max-width: 480px) {
+
+    #CajaPadre {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .CajaHijo {
+        width: 100%;
+        text-align: center;
+    }
+
+    #SegundaCajaPadre {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #SegundaCajaPadre img {
+        width: 100%;
+        height: auto;
+    }
+
+    #CajaPadre3 {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    #CajaArticles {
+        grid-template-columns: 1fr;
+    }
+
+    #CajaFooter {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .ImageArticles {
+        width: 100%;
+        height: auto;
+    }
+
+    button {
+        width: 100%;
+        max-width: 250px;
+    }
+}
